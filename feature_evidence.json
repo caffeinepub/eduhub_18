@@ -1,0 +1,92 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-create-a-landing-page-that-introduces-the-educational-platform-with-a-hero-section-feature-highlights-and-call-to-action",
+      "featureTitle": "Create a landing page that introduces the educational platform with a hero section, feature highlights, and call-to-action",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/LandingPage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-a-course-listing-view-where-users-can-browse-available-educational-courses-with-title-description-and-enrollment-status",
+      "featureTitle": "Implement a course listing view where users can browse available educational courses with title, description, and enrollment status",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/CourseCard.tsx",
+        "frontend/src/components/CourseList.tsx",
+        "frontend/src/hooks/useEnrollmentStatus.ts"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-user-enrollment-functionality-allowing-authenticated-users-to-enroll-in-courses",
+      "featureTitle": "Implement user enrollment functionality allowing authenticated users to enroll in courses",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/CourseCard.tsx",
+        "frontend/src/components/MyCoursesPage.tsx",
+        "frontend/src/hooks/useEnrollment.ts",
+        "frontend/src/hooks/useUserCourses.ts"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-a-cohesive-visual-theme-with-warm-inviting-colors-avoiding-blue-and-purple-clean-typography-suitable-for-learning-and-an-accessible-layout-that-encourages-engagement-and-focus",
+      "featureTitle": "Create a cohesive visual theme with warm, inviting colors (avoiding blue and purple), clean typography suitable for learning, and an accessible layout that encourages engagement and focus",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/Layout.tsx",
+        "frontend/src/index.css",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-5"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

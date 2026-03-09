@@ -1,0 +1,56 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "Educational application",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Hero section background image showing a bright, welcoming learning environment with books and natural light (hero-learning.dim_1200x600.png)\n- Icon representing course enrollment with a friendly academic theme (course-icon.dim_128x128.png)",
+  "existing_features": [
+    {
+      "id": "feature-create-a-landing-page-that-introduces-the-educational-platform-with-a-hero-section-feature-highlights-and-call-to-action",
+      "title": "Create a landing page that introduces the educational platform with a hero section, feature highlights, and call-to-action",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-course-listing-view-where-users-can-browse-available-educational-courses-with-title-description-and-enrollment-status",
+      "title": "Implement a course listing view where users can browse available educational courses with title, description, and enrollment status",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-user-enrollment-functionality-allowing-authenticated-users-to-enroll-in-courses",
+      "title": "Implement user enrollment functionality allowing authenticated users to enroll in courses",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-cohesive-visual-theme-with-warm-inviting-colors-avoiding-blue-and-purple-clean-typography-suitable-for-learning-and-an-accessible-layout-that-encourages-engagement-and-focus",
+      "title": "Create a cohesive visual theme with warm, inviting colors (avoiding blue and purple), clean typography suitable for learning, and an accessible layout that encourages engagement and focus",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-3",
+      "summary": "Create backend data models for courses including course ID, title, description, instructor, and enrollment list",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "status": "pending"
+    }
+  ],
+  "projectName": "EduHub",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

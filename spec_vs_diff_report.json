@@ -1,0 +1,76 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-20T08:22:15.556Z",
+  "summary": "The implementation covers most requirements with strong alignment to the BuildRequest. The backend implements the Course data model with required fields, enrollment functionality, and user profile management. The frontend provides a landing page with hero section (using required hero image), course listing with enrollment status, and authenticated enrollment capabilities. The visual theme uses warm amber/orange tones avoiding blue/purple as specified. However, there are some gaps: the Course model lacks a 'description' field (only has courseId, title, instructor), and there's no clear evidence of viewing enrollment status for each course in the listing before enrollment.",
+  "missing_requirements": [
+    {
+      "id": "REQ-3",
+      "requirement": "Course description field in backend data model",
+      "reason": "The Course.Model type in backend/main.mo only includes courseId, title, and instructor fields. The description field required by REQ-3 is missing from the data structure.",
+      "evidence": [
+        "backend/main.mo"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "requirement": "Display enrollment status for each course in the course listing view",
+      "reason": "While CourseCard.tsx shows enrollment status for the authenticated user, the course listing (CourseList.tsx) does not clearly display enrollment status information (e.g., number of enrolled students, availability) for unauthenticated viewers browsing courses.",
+      "evidence": [
+        "frontend/src/components/CourseList.tsx",
+        "frontend/src/components/CourseCard.tsx"
+      ]
+    }
+  ],
+  "hallucinated_features": [
+    {
+      "description": "User profile system with name storage and profile setup dialog",
+      "reason": "The BuildRequest does not mention user profiles, profile names, or profile setup functionality. The implementation adds UserProfile type, profile management functions (getCallerUserProfile, saveCallerUserProfile), and ProfileSetupDialog component that were not requested.",
+      "evidence": [
+        "backend/main.mo",
+        "frontend/src/components/ProfileSetupDialog.tsx",
+        "frontend/src/hooks/useQueries.ts"
+      ]
+    },
+    {
+      "description": "Course filtering by instructor functionality",
+      "reason": "The backend includes getCoursesByInstructor function with sorting capability that was not part of the specified requirements.",
+      "evidence": [
+        "backend/main.mo"
+      ]
+    },
+    {
+      "description": "Admin-only course creation with access control system",
+      "reason": "The BuildRequest does not mention admin roles, access control systems, or course creation functionality. The implementation adds addCourse function restricted to admins, authorization mixins, and access control state management.",
+      "evidence": [
+        "backend/main.mo"
+      ]
+    }
+  ],
+  "confidence": 0.85,
+  "changed_files": [
+    "all_files_summary.json",
+    "backend/main.mo",
+    "frontend-file-summaries.txt",
+    "frontend/index.css",
+    "frontend/index.html",
+    "frontend/src/App.tsx",
+    "frontend/src/components/CourseCard.tsx",
+    "frontend/src/components/CourseList.tsx",
+    "frontend/src/components/LandingPage.tsx",
+    "frontend/src/components/Layout.tsx",
+    "frontend/src/components/MyCoursesPage.tsx",
+    "frontend/src/components/ProfileSetupDialog.tsx",
+    "frontend/src/hooks/useActor.ts",
+    "frontend/src/hooks/useEnrollment.ts",
+    "frontend/src/hooks/useEnrollmentStatus.ts",
+    "frontend/src/hooks/useInternetIdentity.ts",
+    "frontend/src/hooks/useQueries.ts",
+    "frontend/src/hooks/useUserCourses.ts",
+    "frontend/src/index.css",
+    "frontend/src/main.tsx",
+    "frontend/src/utils/urlParams.ts",
+    "frontend/tailwind.config.js",
+    "project_state.json"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "frontend/src/App.tsx": "Main application component with TanStack Router setup, defining routes for landing page, course list, and my courses page with Layout wrapper and theme provider.",
+  "frontend/src/components/Layout.tsx": "Application layout component with responsive header navigation, authentication controls, mobile menu, footer with attribution, and profile setup dialog integration.",
+  "frontend/src/components/LandingPage.tsx": "Landing page with hero section featuring generated image, feature highlights showcasing platform benefits, and call-to-action sections with warm educational theme.",
+  "frontend/src/components/CourseList.tsx": "Course listing page displaying all available courses in a grid layout with loading states and empty state messaging.",
+  "frontend/src/components/CourseCard.tsx": "Reusable course card component showing course details, instructor, enrollment status badge, and enroll button with authentication checks.",
+  "frontend/src/components/MyCoursesPage.tsx": "Authenticated user's enrolled courses page with access control, displaying enrolled courses or empty state with browse prompt.",
+  "frontend/src/components/ProfileSetupDialog.tsx": "Modal dialog for first-time user profile setup requiring name input, preventing dismissal until profile is created.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks for fetching available courses, user profile data, and saving user profile with proper cache invalidation.",
+  "frontend/src/hooks/useEnrollmentStatus.ts": "React Query hook to check if authenticated user is enrolled in a specific course.",
+  "frontend/src/hooks/useEnrollment.ts": "React Query mutation hook for enrolling users in courses with automatic cache invalidation for enrollment status and user courses.",
+  "frontend/src/hooks/useUserCourses.ts": "React Query hook to fetch all courses the authenticated user is enrolled in.",
+  "frontend/src/index.css": "Global styles with warm educational color palette using OKLCH color system, featuring amber/orange tones for both light and dark modes.",
+  "frontend/tailwind.config.js": "Tailwind configuration extending theme with warm educational colors, Inter font family, and custom design tokens for consistent styling."
+}

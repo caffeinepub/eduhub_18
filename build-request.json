@@ -1,0 +1,114 @@
+{
+  "kind": "build_request",
+  "title": "Create educational application foundation",
+  "projectName": "EduHub",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Create a landing page that introduces the educational platform with a hero section, feature highlights, and call-to-action",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-1"
+        ],
+        "quotes": [
+          "create the educational"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Landing page displays a welcoming hero section",
+        "Key features or benefits of the platform are highlighted",
+        "Clear call-to-action button is present"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Implement a course listing view where users can browse available educational courses with title, description, and enrollment status",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-user-1"
+        ],
+        "quotes": [
+          "create the educational"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Course list displays with title and description for each course",
+        "Users can view all available courses",
+        "Enrollment status is visible for each course"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Create backend data models for courses including course ID, title, description, instructor, and enrollment list",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-user-1"
+        ],
+        "quotes": [
+          "create the educational"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Course type is defined in Motoko with all necessary fields",
+        "Courses can be stored and retrieved",
+        "Data structure supports instructor information and student enrollment"
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Implement user enrollment functionality allowing authenticated users to enroll in courses",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-user-1"
+        ],
+        "quotes": [
+          "create the educational"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Authenticated users can enroll in available courses",
+        "Enrollment status is persisted in the backend",
+        "Users can view their enrolled courses"
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Create a cohesive visual theme with warm, inviting colors (avoiding blue and purple), clean typography suitable for learning, and an accessible layout that encourages engagement and focus",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-1"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Color scheme uses warm, educational tones consistently throughout the app",
+        "Typography is legible and appropriate for extended reading",
+        "Layout promotes focus and reduces visual clutter"
+      ]
+    }
+  ],
+  "constraints": [
+    "Use Internet Identity for user authentication",
+    "All backend logic must be implemented in a single Motoko actor",
+    "Frontend must use React with TypeScript and Tailwind CSS"
+  ],
+  "nonGoals": [
+    "Advanced course creation tools for instructors",
+    "Video streaming or multimedia hosting",
+    "Real-time chat or messaging between students",
+    "Payment processing for course purchases",
+    "Mobile app development"
+  ],
+  "imageRequirements": {
+    "required": [
+      "Hero section background image showing a bright, welcoming learning environment with books and natural light (hero-learning.dim_1200x600.png)",
+      "Icon representing course enrollment with a friendly academic theme (course-icon.dim_128x128.png)"
+    ],
+    "edits": []
+  }
+}
